@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Autobörse</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<ul class="topnav">
+	  	<li ><a href="index.html">Autobörse</a></li>
+	  	<li style="float:right"><a class="active" href="registration.html">Registration</a></li>
+	  	<li style="float:right" id="liLogin"><a class="active" onclick="document.getElementById('id01').style.display='block'">Login</a></li>
+	</ul>
+	
+	<div class="row">
+		<div class="profilmenu">
+			<ul>
+			  	<li ><a href="index.html">Daten</a></li>
+			  	<li ><a class="active" href="registration.html">Inserat erstellen</a></li>
+			  	<li ><a class="active" onclick="document.getElementById('id01').style.display='block'">Login</a></li>
+			  	<li ><a class="active" href="LogoutServlet">Logout</a></li>
+			</ul>
+		</div>
+	</div>
+	
+	<div id="id01" class="card">
+  		<form class="modal-content animate" action="LoginServlet" method="post">
+    		<div class="container">
+		      	<label for="email"><b>Email</b></label>
+		      	<input type="text" placeholder="Enter Username" name="email" required>
+		
+		      	<label for="psw"><b>Password</b></label>
+		      	<input type="password" placeholder="Enter Password" name="password" required>
+		        
+		      	<button type="submit" class="loginbtn">Login</button>
+		      	<label>
+        			<input type="checkbox" checked="checked" name="remember"> Remember me
+      			</label>
+   	 		</div>
+
+    		<div class="container" style="background-color:#f1f1f1">
+      			<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      			<span class="psw">Forgot <a href="#">password?</a></span>
+    		</div>
+  		</form>
+	</div>
+	
+	
+		
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="ISO-8859-1">
+	<title>Autobörse</title>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
+	<link href="style.css" rel="stylesheet">
+</head>
+<body>
+	<ul class="topnav">
+	  	<li><a href="index.html">Home</a></li>
+	  	<li style="float:right"><a class="active" href="registration.html">Registration</a></li>
+		<li style="float:right"><a class="active" href="login.jsp">Login</a></li>
+	</ul>
+	
+	<div class="row">
+		<div class="loginframe">
+			<div class="login">
+				<form method="post" action="register">
+					 	Vorname:	<input class="inputregister" type="text" name="firstname" /><br/>
+				    	Nachname:	<input class="inputregister" type="text" name="lastname" 	/><br/>
+						Email:		<input class="inputregister" type="text" name="email" 	/><br/>
+				       	Password:	<input class="inputregister" type="password" name="pass" 	/><br/>
+				       <input type="submit" value="register" />
+			   	</form>
+		   	</div>
+	   	</div>
+   	</div>
+</body>
+</html>

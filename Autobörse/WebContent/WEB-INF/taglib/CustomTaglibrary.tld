@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+
+<taglib>
+	<tlib-version>1.0</tlib-version>
+	<jsp-version>2.0</jsp-version>
+	<short-name>taglib</short-name>
+
+	<tag>
+		<name>vehicleForm</name>
+		<tag-class>tags.VehicleFormTag</tag-class>
+		<body-content>empty</body-content>
+		<attribute>
+			<name>vehicleType</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>	
+	</tag>
+	
+</taglib>

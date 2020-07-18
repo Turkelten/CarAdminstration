@@ -1,0 +1,7 @@
+INDEX VERSION 1.131
+C:\Users\tjehe\Desktop\Uni Hildesheim\Datenbanken Praktikum\Autobörse Workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3241822749.index
+\Autobörse\src
+C:\Users\tjehe\Desktop\Uni Hildesheim\Datenbanken Praktikum\Autobörse Workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3691872271.index
+\Auto\WEB-INF\classes
+C:\Users\tjehe\Desktop\Uni Hildesheim\Datenbanken Praktikum\Autobörse Workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1450758848.index
+\Autobörse\src

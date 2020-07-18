@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="ISO-8859-1">
+	<title>Autobörse</title>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
+	<link href="style.css" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<nav id="normal">
+			<ul>
+			  	<li style="float:left"><a href="index.html">Autobörse</a></li>
+			  	<li ><a class="active" href="registration.html">Registration</a></li>
+			  	<li ><a class="active" href="login.html">Login</a></li>
+			  	<li ><a class="active" href="userprofil.html">Profil</a></li>
+			</ul>	
+		</nav>
+		
+		<nav id="mobile">
+			<div id="menu">Menü</div>
+			<ul>
+			  	<li ><a href="index.html">Autobörse</a></li>
+			  	<li ><a class="active" href="registration.html">Registration</a></li>
+			  	<li ><a class="active" href="login.html">Login</a></li>
+			  	<li ><a class="active" href="userprofil.html">Profil</a></li>
+			</ul>	
+		</nav>
+	</header>
+	<div class="page">
+		<div class="searchsidebar-container">	
+			<h2>Suchen</h2>
+			<div class="searchsidebar">	    
+			      	<form action="FilterServlet" method="get"><br/>
+						<label for="cars">Marke:</label>
+						<select name="cars" id="cars">
+						  <option value="volvo">Volvo</option>
+						  <option value="bmw">BMW</option>
+						  <option value="mercedes">Mercedes</option>
+						  <option value="audi">Audi</option>
+						</select><br/>
+						<label>Bezeichnung:</label> <br/>
+						<input type="text" name="bez"> <br/>
+						<label>Motortyp:</label><br/><br/>
+						<input type="radio" name="motor" value="benzin">Benzin<br/>
+						<input type="radio" name="motor" value="diesel">Diesel<br/>
+						<input type="radio" name="motor" value="elektro">Elektro<br/>
+						<label>Leistung:</label>
+						<input type="text" name="leistung"> <br/>
+						<label>Größe:</label><br/>
+						<input type="radio" name="groeße" value="fünf">3-Türer<br/>
+						<input type="radio" name="groeße" value="drei">5-Türer<br/>
+					    <label>Max KM-Stand:</label>
+						<input type="text" name="kmStand"> <br/>
+						<br/><button type="submit">Suchen</button> <button type="reset">Reset</button>
+					</form>
+			</div>
+		</div>
+		<div class="user-page">
+		  	<div class="anzeige">
+			      <h4>TITLE HEADING</h4>
+			      <h5>Title description, Sep 2, 2017</h5>
+			      <div class="fakeimg" style="height:60px; width: 60px">Image</div>
+			      <p>Some text..</p>
+			      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+			</div>
+		</div>
+	</div>	
+	
+	<script>
+	// Get the modal
+	var modal = document.getElementById('id01');
+
+	// When the user clicks anywhere outside of the modal, close it
+	window.onclick = function(event) {
+	    if (event.target == modal) {
+	        modal.style.display = "none";
+	    }
+	}
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<ul class="topnav">
+	  	<li ><a href="index.html">Autobörse</a></li>
+	  	<li style="float:right"><a class="active" href="registration.html">Registration</a></li>
+	  	<li style="float:right" id="liLogin"><a class="active" onclick="document.getElementById('id01').style.display='block'">Login</a></li>
+	  	<li style="float:right"><a class="active" href="LogoutServlet">Logout</a></li>
+	</ul>
+	
+	
+	<div>
+	
+	</div>
+	
+	
+		
+</body>
+</html>

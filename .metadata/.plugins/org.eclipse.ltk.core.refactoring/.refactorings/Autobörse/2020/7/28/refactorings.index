@@ -1,0 +1,50 @@
+1594149814379	Delete element
+1594150959324	Delete element
+1594153802410	Copy file
+1594158148038	Delete element
+1594158163466	Move 'login.jsp' to 'WebContent'
+1594158340502	Delete element
+1594158531448	Delete element
+1594159069377	Move 'impressum.jsp' to 'WEB-INF'
+1594159070335	Move 'index.jsp' to 'WEB-INF'
+1594159071063	Move 'login.jsp' to 'WEB-INF'
+1594159071741	Move 'style.css' to 'WEB-INF'
+1594159705135	Delete element
+1594159713720	Delete element
+1594159715971	Delete element
+1594159779386	Move 'index.html' to 'WebContent'
+1594159868619	Move 'style.css' to 'WebContent'
+1594159913129	Move 'login.html' to 'WebContent'
+1594159914668	Move 'impressum.html' to 'WebContent'
+1594300857970	Copy compilation unit
+1594300861868	Copy compilation unit
+1594300868264	Delete element
+1594300869442	Delete element
+1594300993738	Delete element
+1594302957731	Move 'web.xml' to 'WEB-INF'
+1594304070531	Delete element
+1594304255536	Rename package 'Vehicles'
+1594304264750	Rename package 'Servlets'
+1594326180322	Move 'taglibs-standard-compat-1.2.5.jar' to 'lib'
+1594326183056	Move 'taglibs-standard-impl-1.2.5.jar' to 'lib'
+1594326185236	Move 'taglibs-standard-jstlel-1.2.5.jar' to 'lib'
+1594326187356	Move 'taglibs-standard-spec-1.2.5.jar' to 'lib'
+1594326213420	Move 'CustomTaglibrary.tld' to 'taglib'
+1594326217714	Move 'vehicles.jsp' to 'WEB-INF'
+1594326221976	Move 'welcome.jsp' to 'WebContent'
+1594326223504	Move 'vehicles.jsp' to 'WebContent'
+1594326390725	Delete element
+1594327024776	Rename type 'SeachServlet'
+1594327754231	Delete element
+1594328016846	Delete element
+1594328171026	Delete element
+1594581373990	Copy compilation unit
+1594581386516	Delete element
+1594581398379	Copy compilation unit
+1594581400159	Copy compilation unit
+1594581401122	Copy compilation unit
+1594581402941	Delete element
+1594581404037	Delete element
+1594581405341	Delete element
+1594581821538	Move 'link.html' to 'WebContent'
+1594583156373	Rename type 'user'
