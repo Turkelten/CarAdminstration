@@ -304,19 +304,25 @@ header nav#mobile ul li:hover > ul {
 
 
 .user-page {
-  width: 85%;
+  width: 800px;
   height: 100%;
   padding-top: 10px;
   padding-left: 30px;
-  margin-left: 0;
+  margin-left: auto;
+  margin-right: auto;
   float: left;
 }
+
+body div#inseratform {
+  display: none;
+}
+
 .userform {
   position: relative;
   z-index: 1;
   background: #FFFFFF;
   
-  padding: 45px;
+  padding: 25px;
   text-align: center;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
@@ -331,6 +337,35 @@ header nav#mobile ul li:hover > ul {
   box-sizing: border-box;
   font-size: 14px;
 }
+
+.userform h2 {
+  	text-align:center;
+	padding-top: 0;
+	font-size: 3rem;
+	font-weight: 500;
+	font-family: "Roboto", sans-serif;
+	color: black;
+}
+
+.userform label {
+  	text-align:center;
+	padding-top: 0;
+	font-size: 1.5rem;
+	font-weight: 300;
+	font-family: "Roboto", sans-serif;
+	color: black;
+}
+
+.userform a {
+  	text-align:center;
+	padding-top: 0;
+	font-size: 1.5rem;
+	font-weight: 300;
+	font-family: "Roboto", sans-serif;
+	color: black;
+}
+
+
 .userform button {
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;

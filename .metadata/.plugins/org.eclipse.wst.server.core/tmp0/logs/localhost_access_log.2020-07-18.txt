@@ -1234,3 +1234,12 @@
 0:0:0:0:0:0:0:1 - - [18/Jul/2020:23:15:19 +0200] "GET /Autob%C3%B6rse/style.css HTTP/1.1" 304 -
 0:0:0:0:0:0:0:1 - - [18/Jul/2020:23:18:33 +0200] "GET /Autob%C3%B6rse/index.html HTTP/1.1" 304 -
 0:0:0:0:0:0:0:1 - - [18/Jul/2020:23:18:33 +0200] "GET /Autob%C3%B6rse/style.css HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [18/Jul/2020:23:26:29 +0200] "GET /Autob%C3%B6rse/userprofil.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [18/Jul/2020:23:26:29 +0200] "GET /Autob%C3%B6rse/style.css HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [18/Jul/2020:23:26:46 +0200] "GET /Autob%C3%B6rse/index.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [18/Jul/2020:23:26:47 +0200] "GET /Autob%C3%B6rse/registration.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [18/Jul/2020:23:26:48 +0200] "GET /Autob%C3%B6rse/login.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [18/Jul/2020:23:37:44 +0200] "GET /Autob%C3%B6rse/style.css HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [18/Jul/2020:23:37:45 +0200] "GET /Autob%C3%B6rse/userprofil.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [18/Jul/2020:23:38:10 +0200] "GET /Autob%C3%B6rse/index.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [18/Jul/2020:23:38:18 +0200] "GET /Autob%C3%B6rse/LogoutServlet HTTP/1.1" 200 3115

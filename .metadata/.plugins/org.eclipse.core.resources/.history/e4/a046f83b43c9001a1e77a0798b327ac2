@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="ISO-8859-1">
+	<title>Autobörse</title>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
+	<link href="style.css" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<nav id="normal">
+			<ul>
+			  	<li style="float:left"><a href="index.html">Autobörse</a></li>
+			  	<li ><a class="active" href="registration.html">Registration</a></li>
+			  	<li ><a class="active" href="login.html">Login</a></li>
+			  	<li ><a class="active" href="userprofil.html">Profil</a></li>
+			</ul>	
+		</nav>
+		
+		<nav id="mobile">
+			<div id="menu">Menü</div>
+			<ul>
+			  	<li ><a href="index.html">Autobörse</a></li>
+			  	<li ><a class="active" href="registration.html">Registration</a></li>
+			  	<li ><a class="active" href="login.html">Login</a></li>
+			  	<li ><a class="active" href="userprofil.html">Profil</a></li>
+			</ul>	
+		</nav>
+	</header>
+	<div class="page">
+		<div class="usersidebar-container">
+			<h2>Mein Profil</h2>
+			<div class="usersidebar">
+				<ul>
+				  	<li ><a onclick="document.getElementById('profildaten').style.display='block'">Daten</a></li>
+				  	<li ><a onclick="document.getElementById('inseratform').style.display='block'">Inserat erstellen</a></li>
+				  	<li ><a class="active" href="LogoutServlet">Logout</a></li>
+				</ul>
+			</div>
+		</div>
+		<div id="inseratform">
+			<div class="user-page">
+				  <div class="userform">
+					<form method="post" action="InseratServlet">
+						<h2>Autoverkaufen</h2>
+						<input type="text" placeholder="Beschreibung" name="beschreibung"/>
+						<select name="cars" id="cars">
+						  <option value="volvo">Volvo</option>
+						  <option value="bmw">BMW</option>
+						  <option value="mercedes">Mercedes</option>
+						  <option value="audi">Audi</option>
+						</select><br/>
+						<label>Motorart:</label><br/>
+						<input type="radio" name="motor" value="benzin">Benzin
+						<input type="radio" name="motor" value="diesel">Diesel
+						<input type="radio" name="motor" value="elektro">Elektro
+						<input type="text" placeholder="Leistung" name="leistung"> <br/>
+						<label>Größe:</label><br/>
+						<input type="radio" name="groeße" value="fünf">3-Türer<br/>
+						<input type="radio" name="groeße" value="drei">5-Türer<br/>
+						<input type="text" placeholder="KM-Stand" name="kmStand"> <br/>
+						<button type="submit">Auto einstellen</button>
+					</form>						
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
