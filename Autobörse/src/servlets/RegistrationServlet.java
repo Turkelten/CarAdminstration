@@ -1,6 +1,10 @@
 package servlets;
 
+import Objects.User;
+
 import java.io.IOException;
+import java.sql.SQLException;
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -28,6 +32,7 @@ public class RegistrationServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		response.getWriter().append("Served at: ").append(request.getContextPath());
+
 	}
 
 	/**
@@ -35,7 +40,35 @@ public class RegistrationServlet extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		doGet(request, response);
+
+		String firstName = request.getParameter("firstname");
+		String lastName = request.getParameter("lastname");
+		String userName = request.getParameter("username");
+		String password = request.getParameter("password");
+
+		User newUser = null;
+
+		try
+		{
+			newUser =	Controller.InsertUser(firstName, lastName, userName, password);
+		} catch (SQLException throwables)
+		{
+			throwables.printStackTrace();
+		}
+
+		String destPage = "login.html";
+
+		if(newUser != null)
+		{
+			destPage = "login.html";
+		}
+		else
+		{
+			destPage = "index.html";
+		}
+
+		RequestDispatcher dispatcher = request.getRequestDispatcher(destPage);
+		dispatcher.forward(request, response);
 	}
 
 }
