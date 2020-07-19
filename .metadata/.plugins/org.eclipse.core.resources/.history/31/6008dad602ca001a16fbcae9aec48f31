@@ -1,0 +1,40 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="ISO-8859-1">
+	<title>Autobörse</title>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
+	<link href="style.css" rel="stylesheet">
+</head>
+<body>
+	<jsp:include page="navigationbar.jsp" />
+	<div class="page">
+		<jsp:include page="searchBar.jsp" />
+		<div class="user-page">
+		  	<div class="anzeige">
+			      <h4>TITLE HEADING</h4>
+			      <h5>Title description, Sep 2, 2017</h5>va
+			      <div class="fakeimg" style="height:60px; width: 60px">Image</div>
+			      <p>Some text..</p>
+			      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+			</div>
+		</div>
+	</div>	
+	
+	<script>
+
+	
+	// Get the modal
+	var modal = document.getElementById('id01');
+
+	// When the user clicks anywhere outside of the modal, close it
+	window.onclick = function(event) {
+	    if (event.target == modal) {
+	        modal.style.display = "none";
+	    }
+	}
+</script>
+</body>
+</html>

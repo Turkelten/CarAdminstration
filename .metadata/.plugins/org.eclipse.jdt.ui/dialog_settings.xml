@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
+	<item key="org.eclipse.jdt.ui.lastextjar" value="C:\Users\tjehe\Downloads"/>
 	<section name="JavaElementSearchActions">
 	</section>
 	<section name="completion_proposal_size">
@@ -44,5 +45,8 @@
 		<item key="DIALOG_WIDTH" value="526"/>
 		<item key="DIALOG_HEIGHT" value="694"/>
 		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+	</section>
+	<section name="BuildPathsPropertyPage">
+		<item key="pageIndex" value="2"/>
 	</section>
 </section>

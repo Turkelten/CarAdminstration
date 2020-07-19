@@ -39,7 +39,8 @@ public class FilterServlet extends HttpServlet {
 		ArrayList<Car> cars = new ArrayList<Car>();
 		session.setAttribute("cars", cars);
 		
-		System.out.println("Added two arraylists to session");
+		System.out.println("Added ");
+		response.sendRedirect("results.jsp");
 
 	}
 

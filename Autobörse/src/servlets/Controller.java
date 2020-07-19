@@ -1,8 +1,10 @@
 package servlets;
 
 import Objects.User;
+
 import at.favre.lib.bytes.Bytes;
 import at.favre.lib.crypto.bcrypt.BCrypt;
+
 
 import java.nio.charset.StandardCharsets;
 import java.sql.*;
@@ -24,7 +26,7 @@ public class Controller
         } catch (SQLException throwables)
         {
             throwables.printStackTrace();
-        }
+		}
     }
 
     public Controller() throws SQLException

@@ -1,0 +1,10 @@
+<div class="usersidebar-container">
+			<h2> Profil </h2>
+			<div class="usersidebar">
+				<ul>
+				  	<li ><a onclick="document.getElementById('profildaten').style.display='block'">Daten</a></li>
+				  	<li ><a onclick="document.getElementById('inseratform').style.display='block'">Inserat erstellen</a></li>
+				  	<li ><a class="active" href="LogoutServlet">Logout</a></li>
+				</ul>
+			</div>
+		</div>

@@ -1,0 +1,45 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="ISO-8859-1">
+	<title>Autobörse</title>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
+	<link href="style.css" rel="stylesheet">
+</head>
+<body>
+<header>
+		<nav id="normal">
+			<ul>
+			  	<li style="float:left"><a href="index.html">Autobörse</a></li>
+			  	<li ><a class="active" href="registration.html">Registration</a></li>
+			  	<li ><a class="active" href="login.html">Login</a></li>
+			  	<li ><a class="active" href="userprofil.html">Profil</a></li>
+			</ul>	
+		</nav>
+		
+		<nav id="mobile">
+			<div id="menu">Menü</div>
+			<ul>
+			  	<li ><a href="index.html">Autobörse</a></li>
+			  	<li ><a class="active" href="registration.html">Registration</a></li>
+			  	<li ><a class="active" href="login.html">Login</a></li>
+			  	<li ><a class="active" href="userprofil.html">Profil</a></li>
+			</ul>	
+		</nav>
+	</header>
+	
+	<%
+		String userName = null;
+		Cookie[] cookies = request.getCookies();
+		if(cookies !=null){
+			for(Cookie cookie : cookies){
+				if(cookie.getName().equals("user")) userName = cookie.getValue();
+			}
+		}
+		if(userName == null) response.sendRedirect("login.html");
+	%>
+	<h3>Hi <%=userName %>, Login successful.</h3>
+</body>
+</html>

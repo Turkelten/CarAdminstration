@@ -66,7 +66,7 @@ public class RegistrationServlet extends HttpServlet {
 		{
 			destPage = "index.html";
 		}
-
+		
 		RequestDispatcher dispatcher = request.getRequestDispatcher(destPage);
 		dispatcher.forward(request, response);
 	}

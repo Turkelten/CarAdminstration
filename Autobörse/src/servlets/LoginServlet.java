@@ -8,6 +8,7 @@ import java.sql.SQLException;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -50,29 +51,36 @@ public class LoginServlet extends HttpServlet
         // TODO Auto-generated method stub
 
         User User = null;
+        String username = request.getParameter("username");
+        String password = request.getParameter("password");
         try
         {
-            User = Controller.LoginUser(request.getParameter("username"), request.getParameter("password"));
+            User = Controller.LoginUser(username, password);
         } catch (SQLException throwables)
         {
             throwables.printStackTrace();
         }
 
-        String destPage = "index.html";
-
         if (User != null)
         {
-            HttpSession session = request.getSession();
-            session.setAttribute("user", User);
-            destPage = "index.html";
+        	HttpSession session = request.getSession();      	
+			session.setAttribute("username", User.userName);
+			session.setAttribute("user", User);
+			//setting session to expiry in 30 mins
+			session.setMaxInactiveInterval(30*60);
+			Cookie userName = new Cookie("user", User.userName);
+			userName.setMaxAge(30*60);
+			response.addCookie(userName);
+			response.sendRedirect("userprofil.jsp");
+            
         } else
         {
-            String message = "Invalid email/password";
-            request.setAttribute("message", message);
+        	RequestDispatcher rd = getServletContext().getRequestDispatcher("/login.jsp");
+			PrintWriter out= response.getWriter();
+			out.println("<font color=white>Either user name or password is wrong.</font>");
+			rd.include(request, response);
         }
-
-        RequestDispatcher dispatcher = request.getRequestDispatcher(destPage);
-        dispatcher.forward(request, response);
+                
     }
 
 }
