@@ -2,7 +2,9 @@ package servlets;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.sql.SQLException;
 
+import javax.mail.MessagingException;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -37,8 +39,32 @@ public class PasswordChangeServlet extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		doGet(request, response);
+		//TODO TJERK
+		int userId = Integer.parseInt(request.getParameter("userid"));
+		String userName = request.getParameter("username");
+		try
+		{
+			if(Controller.ResetUserPassword(userId, userName))
+			{
+				//Hat geklappt
+			}
+			else
+			{
+				//RIP
+
+			}
+
+		} catch (SQLException throwables)
+		{
+			//Irgend ne Query hat nicht hingehauen
+			throwables.printStackTrace();
+
+		} catch (MessagingException e)
+		{
+			//Das email senden hat nicht hingehauen
+			e.printStackTrace();
+		}
+
 	}
 
 }
