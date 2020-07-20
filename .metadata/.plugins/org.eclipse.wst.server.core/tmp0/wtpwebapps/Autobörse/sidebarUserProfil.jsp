@@ -1,5 +1,5 @@
 <div class="usersidebar-container">
-			<h2> ${session.username} </h2>
+			<h2> ${username} </h2>
 			<div class="usersidebar">
 				<ul>
 				  	<li ><a href="userprofil.jsp">Daten</a></li>

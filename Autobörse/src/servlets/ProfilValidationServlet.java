@@ -33,20 +33,30 @@ public class ProfilValidationServlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		
-		HttpSession session = request.getSession(false);
-        String username = (String)session.getAttribute("username");
-        
-        
-        if(username!=null){    
-	        System.out.println("Eingeloggt");
-	        response.sendRedirect("userprofil.jsp");
-        }  
-        else{  
-        	System.out.println("Nicht eingeloggt");  
+		try {
+			HttpSession session = request.getSession(false);
+	        String username = (String) session.getAttribute("username");
+	        if(username!=null){
+		        System.out.println("Eingeloggt");
+		        response.sendRedirect("userprofil.jsp");
+	        }  
+	        else{  
+	        	System.out.println("Nicht eingeloggt");  
+	        	RequestDispatcher rd = getServletContext().getRequestDispatcher("/login.jsp");			
+				rd.include(request, response);
+	        } 
+	        
+		} catch (Exception e) {
+			System.out.println("Nicht eingeloggt");  
         	RequestDispatcher rd = getServletContext().getRequestDispatcher("/login.jsp");			
 			rd.include(request, response);
-        }  
+		}
+		
+        
+        
+            
+
+ 
 	}
 
 	/**
